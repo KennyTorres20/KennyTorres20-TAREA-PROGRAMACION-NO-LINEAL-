@@ -1,0 +1,104 @@
+# Puntos Estacionarios: Máximos, Mínimos y Puntos de Inflexión
+
+## Definición de Puntos Estacionarios
+
+Un punto estacionario de una función es un punto donde la derivada primera de la función es igual a cero (f'(x) = 0) . Estos puntos son importantes porque representan lugares donde la función puede cambiar su comportamiento, presentando máximos, mínimos o puntos de inflexión.
+
+Matemáticamente, para una función f(x), un punto a es estacionario si:
+- f es derivable en a
+- f'(a) = 0
+
+En funciones multivariables, un punto (a₁, a₂, ..., aₙ) es estacionario si todas las derivadas parciales se anulan en ese punto .
+
+## Tipos de Puntos Estacionarios
+
+### 1. Máximos Relativos
+
+Un máximo relativo ocurre en un punto a si:
+- f'(a) = 0 (condición necesaria)
+- f''(a) < 0 (condición suficiente) 
+
+**Características**:
+- La función crece hasta el punto a y decrece después
+- La pendiente pasa de positiva a negativa al atravesar el punto
+- La segunda derivada es negativa en el punto
+
+**Ejemplo**:
+Para la función f(x) = -x² + 4:
+- f'(x) = -2x = 0 → x = 0
+- f''(x) = -2 < 0 → Máximo en x=0
+- Punto máximo: (0,4)
+
+### 2. Mínimos Relativos
+
+Un mínimo relativo ocurre en un punto a si:
+- f'(a) = 0
+- f''(a) > 0 
+
+**Características**:
+- La función decrece hasta el punto a y crece después
+- La pendiente pasa de negativa a positiva al atravesar el punto
+- La segunda derivada es positiva en el punto
+
+**Ejemplo**:
+Para la función f(x) = x² - 2x + 3:
+- f'(x) = 2x - 2 = 0 → x = 1
+- f''(x) = 2 > 0 → Mínimo en x=1
+- Punto mínimo: (1,2)
+
+### 3. Puntos de Inflexión
+
+Un punto de inflexión ocurre donde la función cambia su concavidad. Para puntos estacionarios de inflexión:
+- f'(a) = 0
+- f''(a) = 0
+- La tercera derivada f'''(a) ≠ 0 
+
+**Características**:
+- La pendiente tiene el mismo signo a ambos lados del punto
+- La función no tiene extremo en ese punto
+- Cambia de cóncava a convexa o viceversa
+
+**Ejemplo**:
+Para la función f(x) = x³:
+- f'(x) = 3x² = 0 → x = 0
+- f''(x) = 6x = 0 en x=0
+- f'''(x) = 6 ≠ 0 → Punto de inflexión en x=0
+- Punto: (0,0)
+
+## Método para Identificar Puntos Estacionarios
+
+1. **Calcular la primera derivada** f'(x) e igualarla a cero para encontrar puntos críticos 
+2. **Evaluar la segunda derivada** f''(x) en cada punto crítico:
+   - Si f''(a) > 0 → Mínimo relativo
+   - Si f''(a) < 0 → Máximo relativo
+   - Si f''(a) = 0 → Podría ser punto de inflexión (necesita más análisis) 
+3. **Para puntos de inflexión**, verificar cambio en la concavidad o usar derivadas superiores 
+
+## Ejemplo Completo
+
+Analicemos la función f(x) = x³ - 3x² :
+
+1. Primera derivada: f'(x) = 3x² - 6x
+2. Puntos críticos: 3x² - 6x = 0 → x(3x - 6) = 0 → x=0 o x=2
+3. Segunda derivada: f''(x) = 6x - 6
+   - En x=0: f''(0) = -6 < 0 → Máximo en (0,0)
+   - En x=2: f''(2) = 6 > 0 → Mínimo en (2,-4)
+4. Puntos donde f''(x)=0: 6x-6=0 → x=1
+   - Evaluar cambio de concavidad:
+     - Para x<1: f''(0.5)=-3<0 → Cóncava
+     - Para x>1: f''(1.5)=3>0 → Convexa
+   - Punto de inflexión en (1,-2)
+
+## Importancia de los Puntos Estacionarios
+
+Los puntos estacionarios son fundamentales en:
+- Optimización (encontrar máximos y mínimos)
+- Análisis del comportamiento de funciones
+- Aplicaciones en física, economía, ingeniería 
+- Modelado de fenómenos naturales y sociales
+
+## Casos Especiales
+
+- **Funciones no derivables**: Pueden tener extremos en puntos donde no existe la derivada (como en esquinas o picos) 
+- **Puntos singulares**: Donde f'(x)=0 pero no hay extremo (como en puntos de inflexión estacionarios) 
+- **Extremos absolutos**: Los máximos/mínimos más altos/bajos de toda la función, que pueden coincidir o no con los relativos 
